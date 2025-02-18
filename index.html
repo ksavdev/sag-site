@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vite App</title>
+</head>
+
+<body>
+  <section id="up" class="promo">
+    <div class="container">
+      <header class="header">
+        <a href="#" class="header__logo">
+          <img src="/src/icons/logo.svg" alt="logo">
+        </a>
+        <div class="header__contacts">
+          <img src="/src/icons/phone_icon.png" alt="phone">
+          <a href="tel:+74999228974" class="header__phone">+375 17 289-24-06</a>
+          <button data-modal="consultation" class="button">Уточнить стоимость</button>
+        </div>
+      </header>
+    </div>
+  </section>
+
+  <section class="media">
+    <div class="container">
+      <div class="title">Международные автомобильные <br> перевозки грузов</div>
+    </div>
+  </section>
+
+  <section class="contacts">
+    <div class="container">
+      <div class="contacts__wrapper">
+        <div class="contacts__descr">
+          <h2 class="title title_fz40">Ответим на ваши вопросы</h2>
+          <div class="contact__text">Оставьте заявку, и наши специалисты свяжутся с вами в ближайшее время:</div>
+        </div>
+        <form action="#" class="contacts__form">
+          <div class="contacts__input">
+            <input name="company" id="company" type="text" placeholder="Название компании">
+          </div>
+          <div class="contacts__input">
+            <input required name="name" id="name" type="text" placeholder="Имя (обязательно для заполнения)">
+          </div>
+          <div class="contacts__input">
+            <input name="phone" id="phone" type="phone" placeholder="Номер телефона">
+          </div>
+          <div class="contacts__input">
+            <input required name="email" id="email" type="email" placeholder="E-mail (обязательно для заполнения)">
+          </div>
+          <div class="contacts__input">
+            <input name="message" id="message" type="text" placeholder="Ваше сообщение">
+          </div>
+          <div class="contacts__policy">
+            <input required type="checkbox">
+            <span>Я прочитал и согласен с информацией, изложенной в положении о конфиденциальности</span>
+          </div>
+          <div class="contacts__triggers">
+            <button class="button">Отправить завку</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <section class="map-widget">
+    <div class="container">
+      <div class="map__descr">
+        <h2 class="title title_fz40">Как нас найти</h2>
+      </div>
+    </div>
+    <div style="position:relative;overflow:hidden;">
+      <a href="https://yandex.eu/maps/org/jenty/10435076880/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:0px;">Дженти</a>
+      <a href="https://yandex.eu/maps/29630/minsk-district/category/haulage/184108175/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:14px;">Автомобильные грузоперевозки в Минской области</a>
+      <a href="https://yandex.eu/maps/29630/minsk-district/category/logistics_company/184108185/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:28px;">Логистическая компания в Минской области</a>
+      <iframe src="https://yandex.com/map-widget/v1/?ll=27.567059%2C53.733633&mode=search&oid=10435076880&ol=biz&z=16.99" width="1920" height="660" allowfullscreen="false"></iframe>
+    </div>
+  </section>
+
+  <script type="module" src="/src/main.js"></script>
+</body>
+
+</html>
