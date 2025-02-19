@@ -9,7 +9,7 @@
 </head>
 
 <body>
-  <section class="promo">
+   <section class="promo">
     <div class="container">
       <header class="header">
         <a href="#" class="header__logo">
@@ -17,8 +17,8 @@
         </a>
         <div class="header__contacts">
           <img src="/src/icons/phone_icon.png" alt="phone">
-          <a href="tel:+74999228974" class="header__phone">+375 17 289-24-06</a>
-          <button class="button">Уточнить стоимость</button>
+          <a href="tel:+375172892406" class="header__phone">+375 17 289-24-06</a>
+            <button class="button" onclick="document.getElementById('company').scrollIntoView({ behavior: 'smooth' });">Уточнить стоимость</button>
         </div>
       </header>
     </div>
@@ -37,7 +37,7 @@
           <h2 class="title title_fz40">Ответим на ваши вопросы</h2>
           <div class="contact__text">Оставьте заявку, и наши специалисты свяжутся с вами в ближайшее время:</div>
         </div>
-        <form action="#" class="contacts__form">
+        <form action="send_mail.php" method="post" class="contacts__form">
           <div class="contacts__input">
             <input name="company" id="company" type="text" placeholder="Название компании">
           </div>
@@ -48,7 +48,7 @@
             <input name="phone" id="phone" type="phone" placeholder="Номер телефона">
           </div>
           <div class="contacts__input">
-            <input required name="email" id="email" type="email" placeholder="E-mail (обязательно для заполнения)">
+            <input required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" name="email" id="email" type="email" placeholder="E-mail (обязательно для заполнения)">
           </div>
           <div class="contacts__input">
             <input name="message" id="message" type="text" placeholder="Ваше сообщение">
@@ -58,7 +58,7 @@
             <span>Я прочитал и согласен с информацией, изложенной в положении о конфиденциальности</span>
           </div>
           <div class="contacts__triggers">
-            <button class="button">Отправить завку</button>
+            <button class="button" type="submit">Отправить завку</button>
           </div>
         </form>
       </div>
